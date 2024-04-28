@@ -1,0 +1,738 @@
+{
+	"info": {
+		"_postman_id": "ed5efdf9-665c-4413-bc5f-ba1cc9f13309",
+		"name": "zoom-clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26753110",
+		"_collection_link": "https://limr-jira.postman.co/workspace/zoom-clone~695ed69d-5db3-47e4-a8f9-49bee717a09a/collection/26753110-ed5efdf9-665c-4413-bc5f-ba1cc9f13309?action=share&source=collection_link&creator=26753110"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lubna@zoom.com\",\r\n    \"password\":\"123456789as\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"lubna@gmail.com\",\r\n    \"password\":\"123456789as\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/login",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10a-mwkXmnEDNqX9MbRGecQxx3ZIVkM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Apr 2024 16:13:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InN1YiI6eyJpZCI6IjE4MWFjZTBmLTM5NTEtNDMwNS1hNjBiLThhNmZhYzQxNDU5OCIsImVtYWlsIjoibHVibmFAZ21haWwuY29tIn19LCJpYXQiOjE3MTQyMzQ0MDMsImV4cCI6MTcxNjgyNjQwM30.bXzEAjxt9YwYzMs_9mPbVI7XxoZwnNL2xxiCYqFO_Dc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"lubnaalhindy\",\r\n    \"email\": \"lubna@gmail.com\",\r\n    \"password\":\"123456789as\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/user/register",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\": \"lubnaalhindy\",\r\n    \"email\": \"lubna@gmail.com\",\r\n    \"password\":\"123456789as\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/user/register",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-Q/25IW+169NNvooMECcuAsIZQSQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Apr 2024 16:13:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"181ace0f-3951-4305-a60b-8a6fac414598\",\n    \"fullName\": \"lubnaalhindy\",\n    \"email\": \"lubna@gmail.com\",\n    \"createdAt\": \"2024-04-27T16:13:06.488Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/user",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "531"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"213-5H2OfcBq/WQg3vyLj2guDPLMwAQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Apr 2024 16:13:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"3bbcd728-dbb0-41f8-92d8-59c8475a3ed9\",\n        \"fullName\": \"koko\",\n        \"email\": \"koko@gmail.com\",\n        \"createdAt\": \"2024-04-27T13:42:27.889Z\"\n    },\n    {\n        \"id\": \"d84572f8-9548-4cce-83c0-8b89a948413b\",\n        \"fullName\": \"koko\",\n        \"email\": \"2koko@gmail.com\",\n        \"createdAt\": \"2024-04-27T13:44:45.509Z\"\n    },\n    {\n        \"id\": \"93b9de50-5345-4000-8393-0024a8f5c91f\",\n        \"fullName\": \"lubnaalhindy\",\n        \"email\": \"lubna@zoom.com\",\n        \"createdAt\": \"2024-04-27T16:11:26.556Z\"\n    },\n    {\n        \"id\": \"181ace0f-3951-4305-a60b-8a6fac414598\",\n        \"fullName\": \"lubnaalhindy\",\n        \"email\": \"lubna@gmail.com\",\n        \"createdAt\": \"2024-04-27T16:13:06.488Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "conference",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"interview2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/conference",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"conference"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"interview2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}/conference",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"conference"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "207"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cf-EPTvzPhTWx8wbSDgwc8adBqhfoc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 16:10:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"67580ead-3283-4326-9429-be15e30834a7\",\n    \"url\": \"http://mock-zoom-conference/conference/5e072369-c3d5-4666-80b9-44d531e0aca1\",\n    \"name\": \"interview2\",\n    \"createdAt\": \"2024-04-28T16:10:00.383Z\",\n    \"status\": \"running\"\n}"
+						}
+					]
+				},
+				{
+					"name": "join",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/conference/join/:id",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"conference",
+								"join",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "67580ead-3283-4326-9429-be15e30834a7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leave",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/conference/leave/:id",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"conference",
+								"leave",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "54315e3c-3bca-4bb9-b580-485edf58b5d8"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "leave",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/conference/leave/:id",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"conference",
+										"leave",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "54315e3c-3bca-4bb9-b580-485edf58b5d8"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-IWhTUhVeBNALT2bi5kwjkUm+uNw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 16:09:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User left zoom conference successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/conference",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"conference"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/conference",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"conference"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "208"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d0-cz5Gvp4whn8tUcjo6mW2L6+lRaE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 16:07:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"54315e3c-3bca-4bb9-b580-485edf58b5d8\",\n        \"url\": \"http://mock-zoom-conference/conference/5a3b13b7-30de-4975-97d5-24b6a62043f0\",\n        \"name\": \"interview\",\n        \"createdAt\": \"2024-04-28T15:58:44.493Z\",\n        \"status\": \"running\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "message",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/message/:id",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"message",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "54315e3c-3bca-4bb9-b580-485edf58b5d8"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/message/:id",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"message",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "54315e3c-3bca-4bb9-b580-485edf58b5d8"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "331"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14b-unP6mAxcxzz05Dcj2B0k+6Brjxs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 16:31:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"27bffc53-fbcf-4211-8463-deb939326c10\",\n        \"userId\": \"93b9de50-5345-4000-8393-0024a8f5c91f\",\n        \"conferenceId\": \"54315e3c-3bca-4bb9-b580-485edf58b5d8\",\n        \"message\": \"dcds\"\n    },\n    {\n        \"id\": \"3e843b61-b243-4a9e-bad2-9d2f8c90d2f2\",\n        \"userId\": \"93b9de50-5345-4000-8393-0024a8f5c91f\",\n        \"conferenceId\": \"54315e3c-3bca-4bb9-b580-485edf58b5d8\",\n        \"message\": \"dcds\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
